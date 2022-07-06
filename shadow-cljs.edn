@@ -1,0 +1,15 @@
+{
+ ;; use source-paths and dependencies from leiningen project.clj:
+ :lein {:profiles "shadow"}
+ :fs-watch {:hawk false} ;; see https://github.com/thheller/shadow-cljs/issues/837
+ :builds {:test {:target :browser-test
+                 :test-dir "target/public/test"
+                 :compiler-options {:warnings {:fn-deprecated false}}
+                 :devtools {:hud #{:errors :warnings :progress}
+                            :http-port          9500
+                            :http-root          "target/public/test"}}
+          :ci {:target :karma
+               :compiler-options {:warnings {:fn-deprecated false}}
+               :output-to "target/ci.js"}
+          }
+ }
