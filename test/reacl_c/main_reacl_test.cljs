@@ -2,7 +2,7 @@
   "Test interop with Reacl"
   (:require [reacl-c.main.reacl :as main]
             [reacl-c.main-browser-test :as btest]
-            [reacl-c.core :as c]
+            [reacl-c.core :as c :include-macros true]
             [reacl-c.interop.reacl :as i]
             [reacl-c.dom :as dom]
             [reacl2.core :as reacl :include-macros true]
