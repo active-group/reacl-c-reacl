@@ -1,4 +1,5 @@
 (ns reacl-c.interop.reacl
+  "Functions for using Reacl classes as Reacl-c items."
   (:require [reacl-c.core :as c :include-macros true]
             [reacl-c.base :as base]
             [reacl-c.interop.react :as react]

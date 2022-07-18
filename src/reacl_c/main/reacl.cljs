@@ -45,7 +45,7 @@
   Messages sent to the returned component are passed to the given
   item. Actions and effects emitted from the item are emitted from the
   returned component. To have effects being executed implicitly,
-  use [[reacl-c.main/execute-effects]]."
+  use `reacl-c.main/execute-effects`."
   ([item]
    (runner (reacl/use-app-state nil) item))
   ([binding item]
